@@ -21,3 +21,21 @@ ActiveRecord::Schema.define(version: 2018_11_15_181503) do
   end
 
 end
+
+ActiveRecord::Schema.define(version: 20160809095554) do
+   create_table "managers", force: :cascade do |t|
+    t.string   "task"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+   create_table "mangers", force: :cascade do |t|
+    t.string   "task"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+   create_table "tasks", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+ end
